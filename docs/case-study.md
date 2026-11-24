@@ -1,0 +1,13 @@
+# Meridian Freight: an auditable document-review prototype
+
+**Setting.** Meridian Freight Forwarders is fictional. The prototype explores whether an evidence-linked document pipeline can reduce re-keying and focus a reviewer on inconsistencies in a shipment's bill of lading or air waybill, commercial invoice, packing list and certificate of origin. No real client documents are used.
+
+**Approach.** Documents are rendered and classified, then fields are extracted with source snippets. A reusable `docpipe` package separates document handling from freight business logic. Deterministic rules compare required documents, consignee, counts, weights, totals, dates and other configured fields. Road is the default mode; ocean-specific checks are conditional. The review UI places source pages beside fields and shows exceptions first. Corrections and reasoned overrides are audited, and an export requires explicit confirmation of the latest version.
+
+**What is demonstrated.** A local, runnable path from synthetic PDF intake through review to version-bound JSON/CSV or a local mock-TMS receipt. The offline extraction backend reads PDF text but is explicitly a deterministic parser. A separate configurable vision path is provided; it must not be represented as measured live-model performance without credentials and an actual evaluation. Unsupported scans fail closed to review.
+
+**Evidence.** The corpus and evaluation commands produce the actual baseline and failure list under `reports/`. Numerical targets from the specification are acceptance goals, not observed results. Refer to the generated report for denominators, backend, split, recall, precision and failures; do not extrapolate synthetic measurements to real customs or shipping operations.
+
+**Time study: not yet measured.** A human must manually check ten packs and then review a counterbalanced set through the UI. Record per-pack elapsed seconds, discrepancy correctness, assistance used and any interruptions. The UI includes local-session timing controls. Report median and range for each workflow plus error counts; preserve the raw observations. Until that study is complete there is no defensible percentage time-saving claim.
+
+**Limits and next steps.** Synthetic layouts are easier than real document diversity; scan coverage and multilingual handling remain limited. Reference data is a subset and advisory screening cannot determine legality. A credentialed vision run, independent unseen templates, usability study, production identity/storage adapters and deployment review are needed before any operational pilot. Public hosting, real-data intake, external filings and v1.1 modules are out of this delivery's authorized scope.
