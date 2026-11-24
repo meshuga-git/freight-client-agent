@@ -1,0 +1,13 @@
+{
+  "scope": "Illustrative subsets; not exhaustive or licensed compliance reference data. Unknown locations require verification, not an invalid-code assertion.",
+  "incoterms_2020": ["EXW", "FCA", "CPT", "CIP", "DAP", "DPU", "DDP", "FAS", "FOB", "CFR", "CIF"],
+  "countries": {"US": "United States", "GB": "United Kingdom", "CN": "China", "DE": "Germany", "NL": "Netherlands", "CA": "Canada", "MX": "Mexico", "SG": "Singapore", "AE": "United Arab Emirates"},
+  "currencies": {"USD": "US dollar", "EUR": "Euro", "GBP": "Pound sterling", "CNY": "Yuan", "CAD": "Canadian dollar", "MXN": "Mexican peso", "SGD": "Singapore dollar", "AED": "UAE dirham"},
+  "unlocode_subset": {"USLAX": "Los Angeles", "USNYC": "New York", "CNSHA": "Shanghai", "GBLON": "London", "NLRTM": "Rotterdam", "DEHAM": "Hamburg", "SGSIN": "Singapore", "AEJEA": "Jebel Ali"},
+  "hs_chapter_examples": {"39": "Plastics and articles thereof", "61": "Knitted or crocheted apparel", "62": "Apparel, not knitted or crocheted", "84": "Machinery and mechanical appliances", "85": "Electrical machinery and equipment"},
+  "provenance": [
+    {"url": "https://www.bic-code.org/identification-number/", "use": "Container identifier/check digit reference", "verified_by": "parent agent"},
+    {"url": "https://academy.iccwbo.org/incoterms/article/incoterms-2020-cfr-or-cif/", "use": "ICC waterway-specific terms; applied only under explicit ICC profile", "verified_by": "parent agent"},
+    {"url": "https://unlocode.unece.org/publications/", "use": "Location-code authority; bundled list is only an illustrative subset", "verified_by": "parent agent"}
+  ]
+}
