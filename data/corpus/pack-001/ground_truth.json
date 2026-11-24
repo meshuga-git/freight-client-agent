@@ -1,0 +1,91 @@
+{
+  "documents": [
+    {
+      "file": "bill_of_lading.pdf",
+      "page": 1,
+      "type": "bill_of_lading",
+      "fields": {
+        "consignee": "Example Tool Supply Ltd",
+        "package_count": 10,
+        "country_of_origin": "US",
+        "goods_description": "Steel hand tools",
+        "gross_weight_kg": 1000,
+        "shipping_marks": "MFF-001",
+        "seal_number": "SEAL0001",
+        "document_number": "BL00001",
+        "on_board_date": "2026-10-05",
+        "eta": "2026-10-12"
+      }
+    },
+    {
+      "file": "invoice.pdf",
+      "page": 1,
+      "type": "invoice",
+      "fields": {
+        "consignee": "Example Tool Supply Ltd",
+        "package_count": 10,
+        "country_of_origin": "US",
+        "goods_description": "Steel hand tools",
+        "gross_weight_kg": 1000,
+        "shipping_marks": "MFF-001",
+        "seal_number": "SEAL0001",
+        "document_number": "INV00001",
+        "invoice_date": "2026-10-01",
+        "lines": [
+          {
+            "sku": "TOOLS",
+            "quantity": 100,
+            "unit_price": 25,
+            "line_total": 2500,
+            "currency": "USD",
+            "hs_code": "820559",
+            "description": "Steel hand tools"
+          }
+        ],
+        "total": 2500,
+        "currency": "USD",
+        "incoterm": "FCA",
+        "hs_code": "820559",
+        "freight_charge": 0,
+        "insurance_charge": 0
+      }
+    },
+    {
+      "file": "packing_list.pdf",
+      "page": 1,
+      "type": "packing_list",
+      "fields": {
+        "consignee": "Example Tool Supply Ltd",
+        "package_count": 10,
+        "country_of_origin": "US",
+        "goods_description": "Steel hand tools",
+        "gross_weight_kg": 1000,
+        "shipping_marks": "MFF-001",
+        "seal_number": "SEAL0001",
+        "lines": [
+          {
+            "sku": "TOOLS",
+            "quantity": 100,
+            "unit_price": 25,
+            "line_total": 2500,
+            "currency": "USD",
+            "hs_code": "820559",
+            "description": "Steel hand tools"
+          }
+        ]
+      }
+    },
+    {
+      "file": "certificate_of_origin.pdf",
+      "page": 1,
+      "type": "certificate_of_origin",
+      "fields": {
+        "country_of_origin": "US",
+        "goods_description": "Steel hand tools",
+        "document_number": "COO00001"
+      }
+    }
+  ],
+  "seeded_errors": [],
+  "history": []
+}
