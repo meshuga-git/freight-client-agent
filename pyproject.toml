@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "meridian-freight-agent"
+version = "0.1.0"
+description = "Synthetic-only auditable freight document review and reusable docpipe"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "pydantic>=2,<3", "httpx>=0.27,<1", "PyMuPDF>=1.24,<2", "reportlab>=4,<5", "Pillow>=10", "Jinja2>=3,<4", "python-multipart>=0.0.18", "streamlit>=1.40,<2", "requests>=2.32"]
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9"]
+[project.scripts]
+freight = "freight_agent.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+freight_agent = ["references/*.json", "templates/*"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+[tool.ruff]
+line-length = 100
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
