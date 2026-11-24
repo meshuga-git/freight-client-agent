@@ -1,0 +1,361 @@
+{
+  "tasks": 50,
+  "concurrency": 50,
+  "scope": "Full local SQLite/files/offline ingest-render-extract-validate; transactions serialize processing, not production throughput",
+  "elapsed_seconds": 5.379451727999822,
+  "completed": 50,
+  "unique_ids": 50,
+  "external_calls": 0,
+  "results": [
+    {
+      "id": "aacbc8d2-4f92-433c-b046-7a1f0c0f1e33",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 3.946047367999654,
+      "cost": 0.0
+    },
+    {
+      "id": "8910dd02-1419-48f6-9f98-158d1b1d6ecc",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 3.3430099600000176,
+      "cost": 0.0
+    },
+    {
+      "id": "12427cd6-0eab-4463-97a5-70f31a4908af",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 1.7219603730000017,
+      "cost": 0.0
+    },
+    {
+      "id": "19036d41-9efd-44ed-9a92-e869b8f3b9e7",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 2.18244830499998,
+      "cost": 0.0
+    },
+    {
+      "id": "05a8b8c7-0252-4389-858a-64b3d6224b63",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 2.4223251860003074,
+      "cost": 0.0
+    },
+    {
+      "id": "a17446c6-e945-474d-8be7-5e425cb7c7d1",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 5.3706013650003115,
+      "cost": 0.0
+    },
+    {
+      "id": "15779016-6c8d-445b-9dc7-00cda0d9ac38",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 4.360533633000159,
+      "cost": 0.0
+    },
+    {
+      "id": "de6d8ca5-db02-42f4-ba62-2eedafc44982",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 2.0285796970001684,
+      "cost": 0.0
+    },
+    {
+      "id": "70608507-e76b-454b-a385-ae9355f2249a",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 2.513401165999767,
+      "cost": 0.0
+    },
+    {
+      "id": "97771955-bc96-4aa0-8ebc-3f514f37ce95",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 5.067945416000384,
+      "cost": 0.0
+    },
+    {
+      "id": "084f8fa5-6d6f-4bfb-b6fe-2e05ee73ed31",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 4.664433724999981,
+      "cost": 0.0
+    },
+    {
+      "id": "753090e2-76e0-4dda-9c3d-26241753006c",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 1.5033107889998973,
+      "cost": 0.0
+    },
+    {
+      "id": "9b338170-16d5-4ad0-ae9d-c56586ba37f1",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 4.027122025000153,
+      "cost": 0.0
+    },
+    {
+      "id": "0eda07ce-abc9-4dc5-ae3d-7e3258ebcc24",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 2.753114803999779,
+      "cost": 0.0
+    },
+    {
+      "id": "e44d539c-6907-4611-a647-a36d90300381",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 3.423482389000128,
+      "cost": 0.0
+    },
+    {
+      "id": "93f816ad-f3b4-4b13-a92e-ac0f53d7f8ed",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 1.3305050929998288,
+      "cost": 0.0
+    },
+    {
+      "id": "1df9b3b7-3c13-48cb-b450-ffb0610ace9e",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 2.610074145999988,
+      "cost": 0.0
+    },
+    {
+      "id": "fea9bc95-34c3-471b-988d-15d135dbfa27",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 3.229748852999819,
+      "cost": 0.0
+    },
+    {
+      "id": "a05565d9-f6b0-43eb-a7b0-519881641c25",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 1.4195637339998939,
+      "cost": 0.0
+    },
+    {
+      "id": "5eb32ba9-af4d-4e0e-9f81-e11141701f81",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 4.86159563199999,
+      "cost": 0.0
+    },
+    {
+      "id": "8ad23700-956a-4efc-b260-f8f95d174691",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 3.624075753999932,
+      "cost": 0.0
+    },
+    {
+      "id": "a64fbb05-b023-4cb7-a692-991bb1240d2e",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 3.4985413170002175,
+      "cost": 0.0
+    },
+    {
+      "id": "5490bfcc-f671-45c4-9c5f-0508b703a0e0",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 5.254658836999624,
+      "cost": 0.0
+    },
+    {
+      "id": "4a41cc59-d879-4b40-9d93-85baeb2fd817",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 5.159145424999679,
+      "cost": 0.0
+    },
+    {
+      "id": "9fdc26be-1579-4687-afcb-dd25189af7cd",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 2.8240808800001105,
+      "cost": 0.0
+    },
+    {
+      "id": "06907669-47ff-4ddb-850f-f7a40e1ab8f2",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 3.8168652790000124,
+      "cost": 0.0
+    },
+    {
+      "id": "08e42dfa-8cf1-4e71-9584-c9d31af5ac1a",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 0.3723562730001504,
+      "cost": 0.0
+    },
+    {
+      "id": "602626bc-2edd-4378-b091-eadfecf4cfbb",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 0.4558830669998315,
+      "cost": 0.0
+    },
+    {
+      "id": "8a434ca4-7679-4eca-8cfa-eba2cc6cd2ac",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 2.8984477750000224,
+      "cost": 0.0
+    },
+    {
+      "id": "ec6400c2-1a0e-4e0a-9fd9-714b9b523ccd",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 4.526755554999909,
+      "cost": 0.0
+    },
+    {
+      "id": "323fd64e-54f7-4e06-ac55-42405c985ab3",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 4.936391356000058,
+      "cost": 0.0
+    },
+    {
+      "id": "77fefc42-5f3b-4c89-aeb8-10c618d9200f",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 4.739088240000001,
+      "cost": 0.0
+    },
+    {
+      "id": "dc86dd98-15f4-4129-b48c-24dc3f8ff251",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 2.990218046999871,
+      "cost": 0.0
+    },
+    {
+      "id": "5d40089b-5b25-4e4b-9ca1-1632c8b75874",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 3.0895617920000404,
+      "cost": 0.0
+    },
+    {
+      "id": "aa84ca60-85dc-4614-8176-15ac1b66353d",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 0.7469602860001032,
+      "cost": 0.0
+    },
+    {
+      "id": "8414a6be-921e-41a0-a317-0e42f50fb87c",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 1.0515863410000748,
+      "cost": 0.0
+    },
+    {
+      "id": "07fe29c2-0e12-48dc-b102-ea09879091d5",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 4.085537381999984,
+      "cost": 0.0
+    },
+    {
+      "id": "f9cf0409-81b1-4f32-8e53-af58f9f903c1",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 3.709337172999767,
+      "cost": 0.0
+    },
+    {
+      "id": "f58e8b11-1ca0-4346-a40e-daa1b810ae89",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 0.6240449699998862,
+      "cost": 0.0
+    },
+    {
+      "id": "1eafdac2-cba5-4690-a2e1-655ed1d6460f",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 0.8315721979997761,
+      "cost": 0.0
+    },
+    {
+      "id": "b2d77572-a237-4a84-b937-4906e8fa9d4c",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 1.537418185000206,
+      "cost": 0.0
+    },
+    {
+      "id": "a1e7380c-503f-43d7-afd6-c669285cce5c",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 0.9327127719998316,
+      "cost": 0.0
+    },
+    {
+      "id": "e3aebd94-d07f-446f-91bd-4d3dc4ff0ff2",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 4.2138301209997735,
+      "cost": 0.0
+    },
+    {
+      "id": "355bbf4b-6d30-4d08-866d-5a60b6b7755d",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 1.7615788030002477,
+      "cost": 0.0
+    },
+    {
+      "id": "c8c91058-ceee-44e4-98a5-6a7ba6619505",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 1.1704390190002414,
+      "cost": 0.0
+    },
+    {
+      "id": "8ad0a563-c641-49ec-8bc7-74cde74773c9",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 2.2652935269998125,
+      "cost": 0.0
+    },
+    {
+      "id": "c6acfe64-664f-4f4d-a839-0347e7de3549",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 1.8687653669999236,
+      "cost": 0.0
+    },
+    {
+      "id": "42782b27-9cef-4b54-a252-a32ad3b6d579",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 2.054546205999941,
+      "cost": 0.0
+    },
+    {
+      "id": "639154a7-6b4f-4e1d-b5a1-bdf51c8e43e2",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 0.5232724579996102,
+      "cost": 0.0
+    },
+    {
+      "id": "c57fe65f-f3b8-4630-abb5-ebbd38f61c6c",
+      "processed": true,
+      "status": "Clean",
+      "seconds": 4.408216182999695,
+      "cost": 0.0
+    }
+  ]
+}

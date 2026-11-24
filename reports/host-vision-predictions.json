@@ -1,0 +1,114 @@
+{
+  "method": "available-host-model direct pixel inspection via view_image",
+  "scope": "Two synthetic single-page images only; not API integration or target-quality validation.",
+  "documents": [
+    {
+      "image": "text-invoice.png",
+      "fields": {
+        "document_type": {
+          "raw_value": "COMMERCIAL INVOICE",
+          "normalized_value": "commercial_invoice",
+          "page": 1,
+          "evidence": "COMMERCIAL INVOICE",
+          "confidence": 0.99
+        },
+        "consignee": {
+          "raw_value": "Example Tool Supply Ltd",
+          "normalized_value": "Example Tool Supply Ltd",
+          "page": 1,
+          "evidence": "Consignee: Example Tool Supply Ltd",
+          "confidence": 0.99
+        },
+        "package_count": {
+          "raw_value": "10",
+          "normalized_value": 10,
+          "page": 1,
+          "evidence": "Package Count: 10",
+          "confidence": 0.99
+        },
+        "gross_weight_kg": {
+          "raw_value": "1000",
+          "normalized_value": 1000,
+          "page": 1,
+          "evidence": "Gross Weight Kg: 1000",
+          "confidence": 0.99
+        },
+        "total": {
+          "raw_value": "2500",
+          "normalized_value": 2500,
+          "page": 1,
+          "evidence": "Total: 2500",
+          "confidence": 0.99
+        },
+        "currency": {
+          "raw_value": "USD",
+          "normalized_value": "USD",
+          "page": 1,
+          "evidence": "Currency: USD",
+          "confidence": 0.99
+        },
+        "invoice_date": {
+          "raw_value": "2026-10-01",
+          "normalized_value": "2026-10-01",
+          "page": 1,
+          "evidence": "Invoice Date: 2026-10-01",
+          "confidence": 0.99
+        }
+      }
+    },
+    {
+      "image": "scan-invoice.png",
+      "fields": {
+        "document_type": {
+          "raw_value": "COMMERCIAL INVOICE",
+          "normalized_value": "commercial_invoice",
+          "page": 1,
+          "evidence": "COMMERCIAL INVOICE",
+          "confidence": 0.99
+        },
+        "consignee": {
+          "raw_value": "Example Tool Supply Ltd",
+          "normalized_value": "Example Tool Supply Ltd",
+          "page": 1,
+          "evidence": "Consignee: Example Tool Supply Ltd",
+          "confidence": 0.97
+        },
+        "package_count": {
+          "raw_value": "12",
+          "normalized_value": 12,
+          "page": 1,
+          "evidence": "Package Count: 12",
+          "confidence": 0.98
+        },
+        "gross_weight_kg": {
+          "raw_value": "1020",
+          "normalized_value": 1020,
+          "page": 1,
+          "evidence": "Gross Weight Kg: 1020",
+          "confidence": 0.98
+        },
+        "total": {
+          "raw_value": "2500",
+          "normalized_value": 2500,
+          "page": 1,
+          "evidence": "Total: 2500",
+          "confidence": 0.98
+        },
+        "currency": {
+          "raw_value": "USD",
+          "normalized_value": "USD",
+          "page": 1,
+          "evidence": "Currency: USD",
+          "confidence": 0.99
+        },
+        "invoice_date": {
+          "raw_value": "2026-10-01",
+          "normalized_value": "2026-10-01",
+          "page": 1,
+          "evidence": "Invoice Date: 2026-10-01",
+          "confidence": 0.98
+        }
+      }
+    }
+  ]
+}

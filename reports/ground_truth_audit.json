@@ -1,0 +1,57 @@
+{
+  "method": "Read generated PDF text bytes independently of docpipe and compare every ground-truth labelled field; first ten non-scan, non-adversarial packs. This is not human verification of shipping semantics.",
+  "sample_size": 10,
+  "passed": true,
+  "results": [
+    {
+      "pack_id": "pack-001",
+      "field_checks": 37,
+      "failures": []
+    },
+    {
+      "pack_id": "pack-002",
+      "field_checks": 37,
+      "failures": []
+    },
+    {
+      "pack_id": "pack-004",
+      "field_checks": 37,
+      "failures": []
+    },
+    {
+      "pack_id": "pack-005",
+      "field_checks": 37,
+      "failures": []
+    },
+    {
+      "pack_id": "pack-006",
+      "field_checks": 29,
+      "failures": []
+    },
+    {
+      "pack_id": "pack-007",
+      "field_checks": 37,
+      "failures": []
+    },
+    {
+      "pack_id": "pack-009",
+      "field_checks": 37,
+      "failures": []
+    },
+    {
+      "pack_id": "pack-010",
+      "field_checks": 49,
+      "failures": []
+    },
+    {
+      "pack_id": "pack-011",
+      "field_checks": 37,
+      "failures": []
+    },
+    {
+      "pack_id": "pack-012",
+      "field_checks": 37,
+      "failures": []
+    }
+  ]
+}

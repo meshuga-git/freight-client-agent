@@ -1,0 +1,1694 @@
+{
+  "schema_version": 1,
+  "source_sha256": {
+    "freight_agent/evaluation.py": "a6f3e00bdaee469fcf436d945491a7b5abe706f698a840cff2673e84d4194aa5",
+    "freight_agent/rules.py": "d6adf8c928e5c9c93e2bd15842cbb13a65f60bc985dbac2c14ca3ad37c0999f2",
+    "freight_agent/corpus.py": "9e135e106e92438de58c13153901dc0b7674a18a7c69611c9121946195b7c4b3",
+    "docpipe/pipeline.py": "5212c86ffafa207f44edc84f4c2cf792f2ab21348ea97a7b668997f41d7b0871"
+  },
+  "manifest_sha256": "1743ffebc5bc68eaf93f5276d81354740354b17f749a4d69501876a1f751306c",
+  "git_sha": "uncommitted",
+  "timestamp": 1792761386.6063397,
+  "backend": "offline",
+  "split": "heldout",
+  "synthetic_only": true,
+  "pack_count": 20,
+  "document_count": 78,
+  "classification_accuracy": 0.8461538461538461,
+  "classification_by_type": {
+    "bill_of_lading": {
+      "correct": 15,
+      "total": 18,
+      "accuracy": 0.8333333333333334
+    },
+    "invoice": {
+      "correct": 17,
+      "total": 20,
+      "accuracy": 0.85
+    },
+    "packing_list": {
+      "correct": 15,
+      "total": 18,
+      "accuracy": 0.8333333333333334
+    },
+    "certificate_of_origin": {
+      "correct": 17,
+      "total": 20,
+      "accuracy": 0.85
+    },
+    "air_waybill": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0
+    }
+  },
+  "extraction_by_field": {
+    "consignee": {
+      "correct": 49,
+      "total": 58,
+      "accuracy": 0.8448275862068966
+    },
+    "package_count": {
+      "correct": 49,
+      "total": 58,
+      "accuracy": 0.8448275862068966
+    },
+    "country_of_origin": {
+      "correct": 66,
+      "total": 78,
+      "accuracy": 0.8461538461538461
+    },
+    "goods_description": {
+      "correct": 66,
+      "total": 78,
+      "accuracy": 0.8461538461538461
+    },
+    "gross_weight_kg": {
+      "correct": 49,
+      "total": 58,
+      "accuracy": 0.8448275862068966
+    },
+    "shipping_marks": {
+      "correct": 49,
+      "total": 58,
+      "accuracy": 0.8448275862068966
+    },
+    "seal_number": {
+      "correct": 49,
+      "total": 58,
+      "accuracy": 0.8448275862068966
+    },
+    "document_number": {
+      "correct": 51,
+      "total": 60,
+      "accuracy": 0.85
+    },
+    "on_board_date": {
+      "correct": 17,
+      "total": 20,
+      "accuracy": 0.85
+    },
+    "eta": {
+      "correct": 17,
+      "total": 20,
+      "accuracy": 0.85
+    },
+    "invoice_date": {
+      "correct": 17,
+      "total": 20,
+      "accuracy": 0.85
+    },
+    "lines": {
+      "correct": 32,
+      "total": 38,
+      "accuracy": 0.8421052631578947
+    },
+    "total": {
+      "correct": 17,
+      "total": 20,
+      "accuracy": 0.85
+    },
+    "currency": {
+      "correct": 17,
+      "total": 20,
+      "accuracy": 0.85
+    },
+    "incoterm": {
+      "correct": 17,
+      "total": 20,
+      "accuracy": 0.85
+    },
+    "hs_code": {
+      "correct": 17,
+      "total": 20,
+      "accuracy": 0.85
+    },
+    "freight_charge": {
+      "correct": 17,
+      "total": 20,
+      "accuracy": 0.85
+    },
+    "insurance_charge": {
+      "correct": 17,
+      "total": 20,
+      "accuracy": 0.85
+    },
+    "container_number": {
+      "correct": 12,
+      "total": 12,
+      "accuracy": 1.0
+    },
+    "port_of_loading": {
+      "correct": 12,
+      "total": 12,
+      "accuracy": 1.0
+    },
+    "port_of_discharge": {
+      "correct": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "critical_field_accuracy": 0.852112676056338,
+  "critical_fields_total": 284,
+  "seeded_recall": 1.0,
+  "per_rule": {
+    "R01": {
+      "tp": 2,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.4,
+      "recall": 1.0
+    },
+    "R02": {
+      "tp": 2,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.4,
+      "recall": 1.0
+    },
+    "R03": {
+      "tp": 2,
+      "fp": 4,
+      "fn": 0,
+      "precision": 0.3333333333333333,
+      "recall": 1.0
+    },
+    "R04": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "R05": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "R06": {
+      "tp": 0,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": null
+    },
+    "R07": {
+      "tp": 3,
+      "fp": 4,
+      "fn": 0,
+      "precision": 0.42857142857142855,
+      "recall": 1.0
+    },
+    "R08": {
+      "tp": 2,
+      "fp": 5,
+      "fn": 0,
+      "precision": 0.2857142857142857,
+      "recall": 1.0
+    },
+    "R09": {
+      "tp": 1,
+      "fp": 4,
+      "fn": 0,
+      "precision": 0.2,
+      "recall": 1.0
+    },
+    "R10": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null
+    },
+    "R11": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "R12": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null
+    },
+    "R13": {
+      "tp": 3,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0
+    },
+    "R14": {
+      "tp": 0,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": null
+    },
+    "R15": {
+      "tp": 0,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": null
+    },
+    "R16": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  },
+  "clean_pack_count": 10,
+  "false_alarm_rate": 0.2,
+  "straight_through_rate": 0.8,
+  "silent_critical_errors": 0,
+  "latency_seconds": {
+    "mean": 0.09584619260008367,
+    "max": 0.22749394600032247
+  },
+  "cost_usd": {
+    "sum": 0.0,
+    "max": 0.0
+  },
+  "packs": [
+    {
+      "id": "pack-061",
+      "scan": false,
+      "adversarial": null,
+      "clean": true,
+      "seeded": [],
+      "detected": [],
+      "review_required": false,
+      "extraction_errors": [],
+      "latency_seconds": 0.0929269530001875,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-062",
+      "scan": false,
+      "adversarial": null,
+      "clean": false,
+      "seeded": [
+        "R11",
+        "R16"
+      ],
+      "detected": [
+        "R11",
+        "R16"
+      ],
+      "review_required": true,
+      "extraction_errors": [],
+      "latency_seconds": 0.07246707900003457,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-063",
+      "scan": true,
+      "adversarial": null,
+      "clean": true,
+      "seeded": [],
+      "detected": [
+        "R01",
+        "R02",
+        "R03",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R13",
+        "R14",
+        "R15"
+      ],
+      "review_required": true,
+      "extraction_errors": [],
+      "latency_seconds": 0.1857810689998587,
+      "cost_usd": 0.0,
+      "failure_count": 41
+    },
+    {
+      "id": "pack-064",
+      "scan": false,
+      "adversarial": null,
+      "clean": false,
+      "seeded": [
+        "R16"
+      ],
+      "detected": [
+        "R16"
+      ],
+      "review_required": false,
+      "extraction_errors": [],
+      "latency_seconds": 0.06504288900032407,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-065",
+      "scan": false,
+      "adversarial": null,
+      "clean": true,
+      "seeded": [],
+      "detected": [],
+      "review_required": false,
+      "extraction_errors": [],
+      "latency_seconds": 0.0657584640002824,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-066",
+      "scan": false,
+      "adversarial": null,
+      "clean": false,
+      "seeded": [
+        "R03",
+        "R04",
+        "R07"
+      ],
+      "detected": [
+        "R03",
+        "R04",
+        "R07"
+      ],
+      "review_required": true,
+      "extraction_errors": [],
+      "latency_seconds": 0.06953265499987538,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-067",
+      "scan": false,
+      "adversarial": null,
+      "clean": true,
+      "seeded": [],
+      "detected": [],
+      "review_required": false,
+      "extraction_errors": [],
+      "latency_seconds": 0.06436813600021196,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-068",
+      "scan": true,
+      "adversarial": null,
+      "clean": false,
+      "seeded": [
+        "R03",
+        "R07"
+      ],
+      "detected": [
+        "R01",
+        "R02",
+        "R03",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R13",
+        "R14",
+        "R15"
+      ],
+      "review_required": true,
+      "extraction_errors": [],
+      "latency_seconds": 0.2024451880001834,
+      "cost_usd": 0.0,
+      "failure_count": 41
+    },
+    {
+      "id": "pack-069",
+      "scan": false,
+      "adversarial": null,
+      "clean": true,
+      "seeded": [],
+      "detected": [],
+      "review_required": false,
+      "extraction_errors": [],
+      "latency_seconds": 0.06940136100001837,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-070",
+      "scan": false,
+      "adversarial": null,
+      "clean": false,
+      "seeded": [
+        "R07"
+      ],
+      "detected": [
+        "R07"
+      ],
+      "review_required": true,
+      "extraction_errors": [],
+      "latency_seconds": 0.07519211599992559,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-071",
+      "scan": false,
+      "adversarial": null,
+      "clean": true,
+      "seeded": [],
+      "detected": [],
+      "review_required": false,
+      "extraction_errors": [],
+      "latency_seconds": 0.08153360199958115,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-072",
+      "scan": false,
+      "adversarial": null,
+      "clean": false,
+      "seeded": [
+        "R01",
+        "R05",
+        "R13"
+      ],
+      "detected": [
+        "R01",
+        "R03",
+        "R05",
+        "R07",
+        "R08",
+        "R13"
+      ],
+      "review_required": true,
+      "extraction_errors": [],
+      "latency_seconds": 0.06629899200015643,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-073",
+      "scan": true,
+      "adversarial": null,
+      "clean": true,
+      "seeded": [],
+      "detected": [
+        "R01",
+        "R02",
+        "R03",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R13",
+        "R14",
+        "R15"
+      ],
+      "review_required": true,
+      "extraction_errors": [],
+      "latency_seconds": 0.22749394600032247,
+      "cost_usd": 0.0,
+      "failure_count": 41
+    },
+    {
+      "id": "pack-074",
+      "scan": false,
+      "adversarial": null,
+      "clean": false,
+      "seeded": [
+        "R01",
+        "R13"
+      ],
+      "detected": [
+        "R01",
+        "R03",
+        "R07",
+        "R08",
+        "R13"
+      ],
+      "review_required": true,
+      "extraction_errors": [],
+      "latency_seconds": 0.07496689700019488,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-075",
+      "scan": false,
+      "adversarial": null,
+      "clean": true,
+      "seeded": [],
+      "detected": [],
+      "review_required": false,
+      "extraction_errors": [],
+      "latency_seconds": 0.08813820800014582,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-076",
+      "scan": false,
+      "adversarial": null,
+      "clean": false,
+      "seeded": [
+        "R13"
+      ],
+      "detected": [
+        "R13"
+      ],
+      "review_required": true,
+      "extraction_errors": [],
+      "latency_seconds": 0.08961055300005683,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-077",
+      "scan": false,
+      "adversarial": null,
+      "clean": true,
+      "seeded": [],
+      "detected": [],
+      "review_required": false,
+      "extraction_errors": [],
+      "latency_seconds": 0.08102015800022855,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-078",
+      "scan": false,
+      "adversarial": null,
+      "clean": false,
+      "seeded": [
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "detected": [
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "review_required": true,
+      "extraction_errors": [],
+      "latency_seconds": 0.07989241999985097,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-079",
+      "scan": false,
+      "adversarial": null,
+      "clean": true,
+      "seeded": [],
+      "detected": [],
+      "review_required": false,
+      "extraction_errors": [],
+      "latency_seconds": 0.08164541700034533,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    },
+    {
+      "id": "pack-080",
+      "scan": false,
+      "adversarial": null,
+      "clean": false,
+      "seeded": [
+        "R02",
+        "R08"
+      ],
+      "detected": [
+        "R02",
+        "R08",
+        "R09"
+      ],
+      "review_required": true,
+      "extraction_errors": [],
+      "latency_seconds": 0.08340774899988901,
+      "cost_usd": 0.0,
+      "failure_count": 0
+    }
+  ],
+  "failures": [
+    {
+      "pack_id": "pack-063",
+      "kind": "classification",
+      "file": "bill_of_lading.pdf",
+      "page": 1,
+      "expected": "bill_of_lading",
+      "actual": "unknown"
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "consignee",
+      "expected": "Example Tool Supply Ltd",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "package_count",
+      "expected": 16,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "country_of_origin",
+      "expected": "US",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "goods_description",
+      "expected": "Steel hand tools",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "gross_weight_kg",
+      "expected": 1620,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "shipping_marks",
+      "expected": "MFF-063",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "seal_number",
+      "expected": "SEAL0063",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "document_number",
+      "expected": "BL00063",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "on_board_date",
+      "expected": "2026-10-05",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "eta",
+      "expected": "2026-10-12",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "classification",
+      "file": "invoice.pdf",
+      "page": 1,
+      "expected": "invoice",
+      "actual": "unknown"
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "consignee",
+      "expected": "Example Tool Supply Ltd",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "package_count",
+      "expected": 16,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "country_of_origin",
+      "expected": "US",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "goods_description",
+      "expected": "Steel hand tools",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "gross_weight_kg",
+      "expected": 1620,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "shipping_marks",
+      "expected": "MFF-063",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "seal_number",
+      "expected": "SEAL0063",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "document_number",
+      "expected": "INV00063",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "invoice_date",
+      "expected": "2026-10-01",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "lines",
+      "expected": [
+        {
+          "sku": "TOOLS",
+          "quantity": 100,
+          "unit_price": 25,
+          "line_total": 2500,
+          "currency": "USD",
+          "hs_code": "820559",
+          "description": "Steel hand tools"
+        }
+      ],
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "total",
+      "expected": 2500,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "currency",
+      "expected": "USD",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "incoterm",
+      "expected": "FCA",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "hs_code",
+      "expected": "820559",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "freight_charge",
+      "expected": 0,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "insurance_charge",
+      "expected": 0,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "classification",
+      "file": "packing_list.pdf",
+      "page": 1,
+      "expected": "packing_list",
+      "actual": "unknown"
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "consignee",
+      "expected": "Example Tool Supply Ltd",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "package_count",
+      "expected": 16,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "country_of_origin",
+      "expected": "US",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "goods_description",
+      "expected": "Steel hand tools",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "gross_weight_kg",
+      "expected": 1620,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "shipping_marks",
+      "expected": "MFF-063",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "seal_number",
+      "expected": "SEAL0063",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "lines",
+      "expected": [
+        {
+          "sku": "TOOLS",
+          "quantity": 100,
+          "unit_price": 25,
+          "line_total": 2500,
+          "currency": "USD",
+          "hs_code": "820559",
+          "description": "Steel hand tools"
+        }
+      ],
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "classification",
+      "file": "certificate_of_origin.pdf",
+      "page": 1,
+      "expected": "certificate_of_origin",
+      "actual": "unknown"
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "certificate_of_origin.pdf",
+      "field": "country_of_origin",
+      "expected": "US",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "certificate_of_origin.pdf",
+      "field": "goods_description",
+      "expected": "Steel hand tools",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-063",
+      "kind": "field",
+      "file": "certificate_of_origin.pdf",
+      "field": "document_number",
+      "expected": "COO00063",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "classification",
+      "file": "bill_of_lading.pdf",
+      "page": 1,
+      "expected": "bill_of_lading",
+      "actual": "unknown"
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "consignee",
+      "expected": "Example Tool Supply Ltd",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "package_count",
+      "expected": 14,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "country_of_origin",
+      "expected": "US",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "goods_description",
+      "expected": "Steel hand tools",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "gross_weight_kg",
+      "expected": 1670,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "shipping_marks",
+      "expected": "MFF-068",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "seal_number",
+      "expected": "SEAL0068",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "document_number",
+      "expected": "BL00068",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "on_board_date",
+      "expected": "2026-10-05",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "eta",
+      "expected": "2026-10-12",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "classification",
+      "file": "invoice.pdf",
+      "page": 1,
+      "expected": "invoice",
+      "actual": "unknown"
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "consignee",
+      "expected": "Example Tool Supply Ltd",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "package_count",
+      "expected": 14,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "country_of_origin",
+      "expected": "US",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "goods_description",
+      "expected": "Steel hand tools",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "gross_weight_kg",
+      "expected": 1670,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "shipping_marks",
+      "expected": "MFF-068",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "seal_number",
+      "expected": "SEAL0068",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "document_number",
+      "expected": "INV00068",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "invoice_date",
+      "expected": "2026-10-01",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "lines",
+      "expected": [
+        {
+          "sku": "TOOLS",
+          "quantity": 100,
+          "unit_price": 25,
+          "line_total": 2500,
+          "currency": "USD",
+          "hs_code": "820559",
+          "description": "Steel hand tools"
+        }
+      ],
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "total",
+      "expected": 2500,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "currency",
+      "expected": "USD",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "incoterm",
+      "expected": "FCA",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "hs_code",
+      "expected": "820559",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "freight_charge",
+      "expected": 0,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "insurance_charge",
+      "expected": 0,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "classification",
+      "file": "packing_list.pdf",
+      "page": 1,
+      "expected": "packing_list",
+      "actual": "unknown"
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "consignee",
+      "expected": "Example Tool Supply Ltd",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "package_count",
+      "expected": 15,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "country_of_origin",
+      "expected": "US",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "goods_description",
+      "expected": "Steel hand tools",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "gross_weight_kg",
+      "expected": 1753.5,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "shipping_marks",
+      "expected": "MFF-068",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "seal_number",
+      "expected": "SEAL0068",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "lines",
+      "expected": [
+        {
+          "sku": "TOOLS",
+          "quantity": 100,
+          "unit_price": 25,
+          "line_total": 2500,
+          "currency": "USD",
+          "hs_code": "820559",
+          "description": "Steel hand tools"
+        }
+      ],
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "classification",
+      "file": "certificate_of_origin.pdf",
+      "page": 1,
+      "expected": "certificate_of_origin",
+      "actual": "unknown"
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "certificate_of_origin.pdf",
+      "field": "country_of_origin",
+      "expected": "US",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "certificate_of_origin.pdf",
+      "field": "goods_description",
+      "expected": "Steel hand tools",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-068",
+      "kind": "field",
+      "file": "certificate_of_origin.pdf",
+      "field": "document_number",
+      "expected": "COO00068",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "classification",
+      "file": "bill_of_lading.pdf",
+      "page": 1,
+      "expected": "bill_of_lading",
+      "actual": "unknown"
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "consignee",
+      "expected": "Example Tool Supply Ltd",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "package_count",
+      "expected": 12,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "country_of_origin",
+      "expected": "US",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "goods_description",
+      "expected": "Steel hand tools",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "gross_weight_kg",
+      "expected": 1720,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "shipping_marks",
+      "expected": "MFF-073",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "seal_number",
+      "expected": "SEAL0073",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "document_number",
+      "expected": "BL00073",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "on_board_date",
+      "expected": "2026-10-05",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "bill_of_lading.pdf",
+      "field": "eta",
+      "expected": "2026-10-12",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "classification",
+      "file": "invoice.pdf",
+      "page": 1,
+      "expected": "invoice",
+      "actual": "unknown"
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "consignee",
+      "expected": "Example Tool Supply Ltd",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "package_count",
+      "expected": 12,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "country_of_origin",
+      "expected": "US",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "goods_description",
+      "expected": "Steel hand tools",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "gross_weight_kg",
+      "expected": 1720,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "shipping_marks",
+      "expected": "MFF-073",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "seal_number",
+      "expected": "SEAL0073",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "document_number",
+      "expected": "INV00073",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "invoice_date",
+      "expected": "2026-10-01",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "lines",
+      "expected": [
+        {
+          "sku": "TOOLS",
+          "quantity": 100,
+          "unit_price": 25,
+          "line_total": 2500,
+          "currency": "USD",
+          "hs_code": "820559",
+          "description": "Steel hand tools"
+        }
+      ],
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "total",
+      "expected": 2500,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "currency",
+      "expected": "USD",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "incoterm",
+      "expected": "FCA",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "hs_code",
+      "expected": "820559",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "freight_charge",
+      "expected": 0,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "invoice.pdf",
+      "field": "insurance_charge",
+      "expected": 0,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "classification",
+      "file": "packing_list.pdf",
+      "page": 1,
+      "expected": "packing_list",
+      "actual": "unknown"
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "consignee",
+      "expected": "Example Tool Supply Ltd",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "package_count",
+      "expected": 12,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "country_of_origin",
+      "expected": "US",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "goods_description",
+      "expected": "Steel hand tools",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "gross_weight_kg",
+      "expected": 1720,
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "shipping_marks",
+      "expected": "MFF-073",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "seal_number",
+      "expected": "SEAL0073",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "packing_list.pdf",
+      "field": "lines",
+      "expected": [
+        {
+          "sku": "TOOLS",
+          "quantity": 100,
+          "unit_price": 25,
+          "line_total": 2500,
+          "currency": "USD",
+          "hs_code": "820559",
+          "description": "Steel hand tools"
+        }
+      ],
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "classification",
+      "file": "certificate_of_origin.pdf",
+      "page": 1,
+      "expected": "certificate_of_origin",
+      "actual": "unknown"
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "certificate_of_origin.pdf",
+      "field": "country_of_origin",
+      "expected": "US",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "certificate_of_origin.pdf",
+      "field": "goods_description",
+      "expected": "Steel hand tools",
+      "actual": null
+    },
+    {
+      "pack_id": "pack-073",
+      "kind": "field",
+      "file": "certificate_of_origin.pdf",
+      "field": "document_number",
+      "expected": "COO00073",
+      "actual": null
+    }
+  ],
+  "limitations": [
+    "Offline backend is a deterministic template demonstration, not an LLM; scans must fail closed.",
+    "Rule precision is a seeded-error proxy: collateral mismatches and missing-field flags count as false positives unless explicitly seeded.",
+    "Silent critical errors count wrong/missing critical fields in packs that were not routed to review, not independently verified semantic confidence.",
+    "Clean means no seeded validation mismatch; degraded or adversarial clean packs remain in false-alarm denominators.",
+    "Human manual baseline and reviewer time have not been measured; no time-saving claim.",
+    "Held-out split was inspected, then reused after a domain applicability correction to date rules; this is a regression split, not an untouched benchmark. No external data or legal classification accuracy is established."
+  ]
+}
